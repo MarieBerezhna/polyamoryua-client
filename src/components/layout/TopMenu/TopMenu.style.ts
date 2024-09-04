@@ -2,7 +2,11 @@ import styled from 'styled-components';
 
 export const StyledTopMenuWrapper = styled.nav`
 	display: flex;
-	width: 100vw;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
 `;
 
 export const StyledTopMenuList = styled.ul`
