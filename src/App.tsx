@@ -1,26 +1,10 @@
 import './App.css';
-import { Routes, Route, Link } from 'react-router-dom';
-import Home from './pages/Home';
-import NotFound from './pages/NotFound';
+import RootRoutes from './router/RootRoutes';
 
 const App = () => {
 	return (
 		<div>
-			<nav>
-				<ul>
-					<li>
-						<Link to="/">Home</Link>
-					</li>
-					<li>
-						<Link to="/about">About</Link>
-					</li>
-				</ul>
-			</nav>
-
-			<Routes>
-				<Route path="/" element={<Home />} />
-				<Route path="*" element={<NotFound />} />
-			</Routes>
+			<RootRoutes />
 		</div>
 	);
 };

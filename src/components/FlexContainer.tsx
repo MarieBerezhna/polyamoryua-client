@@ -1,18 +1,17 @@
 import styled, { CSSProperties } from 'styled-components';
 
 type FlexProps = {
-    flexDirection?: CSSProperties['flexDirection'];
-    justifyContent?: CSSProperties['justifyContent'];
-    alignItems?: CSSProperties['alignItems'];
-    flexWrap?: CSSProperties['flexWrap'];
-    gap?: CSSProperties['gap'];
-    width?: CSSProperties['width'];
-    maxWidth?: CSSProperties['maxWidth'];
+	flexDirection?: CSSProperties['flexDirection'];
+	justifyContent?: CSSProperties['justifyContent'];
+	alignItems?: CSSProperties['alignItems'];
+	flexWrap?: CSSProperties['flexWrap'];
+	gap?: CSSProperties['gap'];
+	width?: CSSProperties['width'];
+	maxWidth?: CSSProperties['maxWidth'];
 };
 
-
 type FlexContainerProps = {
-    children?: JSX.Element;
+	children?: JSX.Element | string;
 } & FlexProps;
 
 const Flex = styled.div<FlexProps>`
@@ -29,9 +28,8 @@ const Flex = styled.div<FlexProps>`
     `}
 `;
 
-
 const FlexContainer = ({ children, ...props }: FlexContainerProps) => (
-    <Flex {...props}>{children}</Flex>
+	<Flex {...props}>{children}</Flex>
 );
 
 export default FlexContainer;
