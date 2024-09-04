@@ -3,7 +3,7 @@ import { Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 
-const App: React.FC = () => {
+const App = () => {
 	return (
 		<div>
 			<nav>
