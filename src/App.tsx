@@ -1,12 +1,5 @@
-import './App.css';
 import RootRoutes from './router/RootRoutes';
 
-const App = () => {
-	return (
-		<div>
-			<RootRoutes />
-		</div>
-	);
-};
+const App = () => <RootRoutes />;
 
 export default App;
