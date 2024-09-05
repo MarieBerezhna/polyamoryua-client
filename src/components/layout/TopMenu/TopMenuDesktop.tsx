@@ -3,7 +3,7 @@ import SocialLinks from './SocialLinks';
 import { StyledTopMenuList, StyledTopMenuWrapper } from './TopMenu.style';
 import TopMenuItem from './TopMenuItem';
 
-const TopMenu = () => (
+const TopMenuDesktop = () => (
 	<StyledTopMenuWrapper>
 		<StyledTopMenuList>
 			<TopMenuItem to="/">Home</TopMenuItem>
@@ -14,4 +14,4 @@ const TopMenu = () => (
 	</StyledTopMenuWrapper>
 );
 
-export default TopMenu;
+export default TopMenuDesktop;
