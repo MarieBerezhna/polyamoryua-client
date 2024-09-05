@@ -1,11 +1,15 @@
 import styled from 'styled-components';
 import FlexContainer from '../../components/FlexContainer';
 
-export const StyledHeroSection = styled(FlexContainer)`
+type StyledHeroSectionProps = {
+	backgroundUrl: string;
+};
+
+export const StyledHeroSection = styled(FlexContainer)<StyledHeroSectionProps>`
 	position: relative;
 	flex-direction: column;
-	background-image: url('images/homebackground.webp');
-	background-size: 100%;
+	background-image: ${({ backgroundUrl }) => `url(${backgroundUrl})`};
+	background-size: 105%;
 	background-color: gray;
 	background-blend-mode: multiply;
 	background-position: top;
