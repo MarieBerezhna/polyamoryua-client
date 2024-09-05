@@ -10,7 +10,7 @@ const TopMenuMobile = () => {
 
 	return (
 		<StyledTopMenuWrapperMobile>
-			<BrandFlag />
+			<BrandFlag width={90} height={51} />
 			<HamburgerIcon onClick={() => setOpen(!open)} />
 			<StyledTopMenuListMobile open={open}>
 				<TopMenuItem to="/">Home</TopMenuItem>
