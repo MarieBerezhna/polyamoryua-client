@@ -22,7 +22,7 @@ const Flex = styled.div<FlexProps>`
 
 	${({ $flexDirection, $justifyContent, $alignItems, $flexWrap, $gap, $width }) => `
 	justify-content: ${$justifyContent || 'center'};
-	align-items: ${$alignItems || 'flex-start'}; 
+	align-items: ${$alignItems || 'center'}; 
     width: ${$width || 'auto'};
     flex-direction: ${$flexDirection || 'row'};
     flex-wrap: ${$flexWrap || 'wrap'};

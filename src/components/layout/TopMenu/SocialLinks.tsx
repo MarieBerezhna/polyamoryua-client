@@ -37,7 +37,7 @@ const SocialLink = ({
 };
 
 const SocialLinks = () => (
-	<FlexContainer $alignItems="center" $gap={15}>
+	<FlexContainer $alignItems="center" $gap={15} style={{ paddingLeft: 20 }}>
 		{socials.map(item => (
 			<SocialLink key={item.link} {...item} />
 		))}

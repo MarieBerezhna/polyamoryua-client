@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom';
+import FlexContainer from '../components/FlexContainer';
 
 const NotFound = () => {
 	return (
-		<div>
+		<FlexContainer $flexDirection="column" style={{ paddingTop: '40vh' }}>
 			<h1>Page was not found</h1>
 			<Link to="/">Go back</Link>
-		</div>
+		</FlexContainer>
 	);
 };
 

@@ -1,4 +1,4 @@
-const BrandFlag = ({ width = 90, height = 54 }) => (
+const BrandFlag = ({ width = 135, height = 77 }) => (
 	<img src="images/polyprideflag.webp" width={width} height={height} />
 );
 

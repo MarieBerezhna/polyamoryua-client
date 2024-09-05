@@ -6,8 +6,8 @@ import TopMenuItem from './TopMenuItem';
 const TopMenu = () => (
 	<StyledTopMenuWrapper>
 		<StyledTopMenuList>
-			<BrandFlag />
 			<TopMenuItem to="/">Home</TopMenuItem>
+			<BrandFlag />
 			<TopMenuItem to="/about">Non existant page</TopMenuItem>
 			<SocialLinks />
 		</StyledTopMenuList>
